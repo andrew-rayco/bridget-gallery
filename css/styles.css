@@ -1,0 +1,39 @@
+/* Nav
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: justify;
+  background: red;
+}
+
+#nav li {
+  display: inline-block;
+  text-align: center;
+  background: green;
+}
+
+#nav li:first {
+  text-align: left;
+}
+
+#nav li:last {
+  text-align: right;
+}
+
+#nav ul:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+
+
+.feature {
+  clear: both;
+  background: #ccc;
+}
+.feature-info {
+  background: #ddd;
+}
