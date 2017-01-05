@@ -2,27 +2,60 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
+  color: #676766;
 }
+
+h1 {
+  font-size: 1.3em;
+  font-weight: 400;
+  letter-spacing: .09em
+}
+
+h2 {
+  font-size: .7em;
+  letter-spacing: .04em;
+}
+
+
+
 
 
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.header {
+  margin-top: 8%;
+}
+
+#sublogo {
+  text-align: right;
+}
+
+#sublogo h2 {
+  margin: 0;
+}
 
 
 /* Nav
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#nav {
+  background: #e7e8e8; 
+  height: 27px;
+  margin: 1em 0 3em 0;
+  padding: 0 1.7em;
+}
+
 #nav ul {
-  padding: 0;
+  padding-top: .1em;
   margin: 0;
   list-style: none;
   text-align: justify;
-  background: red;
 }
 
 #nav li {
+  text-transform: uppercase;
   display: inline-block;
   text-align: center;
-  background: green;
 }
 
 #nav li:first {
@@ -31,6 +64,12 @@ h1, h2, h3, h4, h5, h6 {
 
 #nav li:last {
   text-align: right;
+}
+
+#nav a {
+  text-decoration: none; 
+  color: #676766;
+  font-size: .9em;
 }
 
 #nav ul:after {
@@ -45,8 +84,12 @@ h1, h2, h3, h4, h5, h6 {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .feature {
-  clear: both;
-  background: #ccc;
+  background: green;
+}
+
+.feature img {
+  width: 100%;
+  display: block;
 }
 .feature-info {
   background: #ddd;
