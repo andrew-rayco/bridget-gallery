@@ -1,5 +1,6 @@
 /* Type
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: #676766;
@@ -16,12 +17,16 @@ h2 {
   letter-spacing: .04em;
 }
 
-
+p {
+  font-size: .7em;
+  line-height: 1.3em;
+}
 
 
 
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 .header {
   margin-top: 8%;
 }
@@ -79,18 +84,45 @@ h2 {
 }
 
 
-
 /* Feature
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.feature {
-  background: green;
+#feature-row {
+  margin-bottom: 3em;
 }
 
 .feature img {
   width: 100%;
   display: block;
 }
+
 .feature-info {
-  background: #ddd;
+  text-align: justify;
+}
+
+.feature-info img {
+  width: 58.5%;
+  display: block;
+}
+
+
+/* Category thumbs (homepage)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#cat-thumbs {
+  background: hotpink;
+  width: 100%;
+}
+
+#cat-thumbs div {
+  display: inline-block;
+}
+
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.footer {
+  background: #676766;
+  height: 22em;
 }
