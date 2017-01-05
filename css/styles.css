@@ -77,6 +77,11 @@ p {
   font-size: .9em;
 }
 
+#nav a:hover, 
+#nav a:active {
+  color: #ed1c24;
+}
+
 #nav ul:after {
   content: '';
   display: inline-block;
