@@ -44,7 +44,7 @@ p {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 #nav {
-  background: #e7e8e8; 
+  background: #e7e8e8;
   height: 27px;
   margin: 1em 0 3em 0;
   padding: 0 1.7em;
@@ -72,12 +72,12 @@ p {
 }
 
 #nav a {
-  text-decoration: none; 
+  text-decoration: none;
   color: #676766;
   font-size: .9em;
 }
 
-#nav a:hover, 
+#nav a:hover,
 #nav a:active {
   color: #ed1c24;
 }
@@ -116,12 +116,22 @@ p {
 
 #cat-thumbs {
   background: hotpink;
-  width: 100%;
 }
 
 #cat-thumbs div {
-  display: inline-block;
+
 }
+
+#cat-thumbs img {
+  width: 100%;
+
+}
+
+.test  {
+
+}
+
+
 
 
 /* Footer
