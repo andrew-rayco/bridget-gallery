@@ -39,7 +39,7 @@ a:active {
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.header {
+header {
     margin-top: 8%;
 }
 
@@ -55,41 +55,41 @@ a:active {
 /* Nav
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-#nav {
+nav {
     background: #e7e8e8;
     height: 27px;
     margin: 1em 0 3em 0;
     padding: 0 1.7em;
 }
 
-#nav ul {
+nav ul {
     padding-top: .1em;
     margin: 0;
     list-style: none;
     text-align: justify;
 }
 
-#nav li {
+nav li {
     text-transform: uppercase;
     display: inline-block;
     text-align: center;
 }
 
-#nav li:first {
+nav li:first {
     text-align: left;
 }
 
-#nav li:last {
+nav li:last {
     text-align: right;
 }
 
-#nav a {
+nav a {
     text-decoration: none;
     color: #676766;
     font-size: .9em;
 }
 
-#nav ul:after {
+nav ul:after {
     content: '';
     display: inline-block;
     width: 100%;
@@ -121,46 +121,34 @@ a:active {
 /* Category thumbs (homepage)
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-#cat-thumbs {
+.cat-thumbs {
     min-height: 14em;
     line-height: 3em;
 }
 
-#cat-thumbs div {
+.cat-thumbs div {
     line-height: 1.2em;
     vertical-align: bottom;
     height: 100%;
 }
 
-#cat-thumbs a {
-
-}
-
-#cat-thumbs img {
-    width: 100%;
-}
-
-
-/* Category titles (homepage)
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-#cat-titles {
+.cat-thumbs a {
     font-size: 1.1em;
     padding-top: .5em;
-}
-
-#cat-titles a {
     color: #676766;
     letter-spacing: .02em;
 }
 
-
+.cat-thumbs img {
+    width: 100%;
+}
 
 
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .foot-container {
     background: #676766;
-    height: 18em;
+    min-height: 18em;
 }
 
 .footer {
