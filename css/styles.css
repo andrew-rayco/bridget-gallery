@@ -201,3 +201,22 @@ nav ul:after {
 .footer4 {
     padding-left: 4em;
 }
+
+@media (min-width: 300px) and (max-width: 749px) {
+    
+    .footer .footer4  {
+        display: none;
+    }
+    
+    .footer1,
+    .footer2,
+    .footer3,
+    .footer4 {
+        padding: 1em 0 0 1em;
+    }
+    
+    .footer3 ul {
+        margin-left: 0;
+        padding-left: 0;
+    }
+}

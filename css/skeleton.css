@@ -404,18 +404,15 @@ there.
 
 
 /* Larger than mobile */
-@media (min-width: 300px) {
+@media (min-width: 200px) {
     body {
         background-color: aqua;
     }
-    
-    nav ul li {
-        width: 100%;
-    }
+
 }
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) and (max-width: 749px) {
+@media (min-width: 300px) and (max-width: 749px) { /* manually altered. Used to have no max-width and min-width of 550px */
     body {
         background-color: green;
     }
@@ -423,6 +420,11 @@ there.
     nav ul li {
         width: 100%;
     }
+    
+    aside {
+        width: 100%;
+    }
+    
 }
 
 /* Larger than tablet */
