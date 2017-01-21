@@ -31,7 +31,8 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 1346px;
+  max-width: 880px;
+    min-width: 300px; /* Added manually */ 
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -75,7 +76,7 @@
 
   .one-third.column               { width: 30.6666666667%; }
   .two-thirds.column              { width: 65.3333333333%; }
-
+  .one-fifth.column               { width: 16.8%; } /* Added manually */
   .one-half.column                { width: 48%; }
 
   /* Offsets */
@@ -119,13 +120,15 @@
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%; 
+  overflow-y: scroll; /* manually added to force scroll bar and prevent 'centering jumps' when navigating back and forth between pages with enough content for a scrollbar and pages that do not */
+}
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222; }
+  font-family: 'Arimo', sans-serif;
+  color: #676766; }
 
 
 /* Typography
@@ -403,16 +406,44 @@ there.
 
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 200px) {
+    body {
+        xbackground-color: aqua;
+    }
+    
+    #feature-info {
+        margin-top: -5em;
+    }
+    
+}
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
+@media (min-width: 550px) and (max-width: 749px) { /* manually altered. Used to have no max-width and min-width of 550px */
+    body {
+        xbackground-color: green;
+    }
+    
+}
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 750px) and (max-width: 999px){
+    body {
+        xbackground-color: yellow;
+    }
+    
+    
+}
 
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+    body {
+        xbackground-color: hotpink;
+    }
+}
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    body {
+        xbackground-color: black;
+    }
+}
