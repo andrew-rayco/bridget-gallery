@@ -22,13 +22,15 @@ h2 {
     letter-spacing: .04em;
 }
 
-p {
+p, a {
     font-size: .7em;
     line-height: 1.3em;
+    color: #676766;
 }
 
 a {
     text-decoration: none;
+    font-size: 1em;
 }
 
 a:hover,
@@ -113,6 +115,10 @@ a:hover#nav-icon {
     border-radius: 5%;
 }
 
+.active {
+    color: #ed1c24;
+}
+
 @media (max-width: 749px) {
     .menu-closed {
         display: none;
@@ -144,7 +150,6 @@ a:hover#nav-icon {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 #feature-row {
-    margin-bottom: 3em;
     z-index: 0;
 }
 
@@ -155,7 +160,6 @@ a:hover#nav-icon {
 }
 
 .overlay {
-    content: " This is content";
     z-index: 10;
     display: block;
     position: relative;
@@ -172,7 +176,7 @@ a:hover#nav-icon {
 .overlay h2,
 .overlay p {
     color: white;
-    font-size: .8em;
+    font-size: 0.8em;
     letter-spacing: .075em;
     padding-left: 1em;
     padding-right: 20%;
@@ -189,11 +193,13 @@ a:hover#nav-icon {
 
 .feature-info {
     text-align: justify;
+    width: 100%
 }
 
 .feature-info img {
     width: 58.5%;
     display: block;
+    margin-bottom: 2em;
 }
 
 
@@ -209,6 +215,7 @@ a:hover#nav-icon {
     line-height: 1.2em;
     vertical-align: bottom;
     height: 100%;
+    margin-top: -1em;
 }
 
 .cat-thumbs a {
@@ -222,6 +229,87 @@ a:hover#nav-icon {
     width: 100%;
 }
 
+/* Search page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.breadcrumb {
+    margin-top: -1em;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
+.search {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    
+    /* breaking long words on smaller devices */   
+          /* These are technically the same, but use both */
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+
+        -ms-word-break: break-all;
+        /* This is the dangerous one in WebKit, as it breaks things wherever */
+        word-break: break-all;
+        /* Instead use this non-standard one: */
+        word-break: break-word;
+
+        /* Adds a hyphen where the word breaks, if supported (No Blink) */
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+}
+
+.search div {
+    text-align: center;
+    line-height: .2em;
+    margin-bottom: 1em;
+}
+.search img {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+
+.search a {
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
+.search:last-child {
+    margin-bottom: 7em;
+}
+
+@media (min-width: 200px) and (max-width: 549px) {
+    .search img {
+        display: none;
+    }
+}
+
+/* Exhibitions page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.exhibition {
+    background-color; red;
+}
+
+.exhib-img img,
+.exhib-thumbs img {
+    width: 100%;
+}
+
+.exhib-thumbs {
+ 
+}
+
+.exhib-thumbs div {
+    position: relative;
+}
+
+.exhib-thumbs div img {
+    display: absolute;
+    bottom: 0;
+}
 
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -233,7 +321,7 @@ a:hover#nav-icon {
 .footer {
     max-width: 880px;
     margin: auto;
-    padding-top: 1em;
+    padding-top: 2em;
     
 }
 
@@ -289,9 +377,6 @@ a:hover#nav-icon {
 }
 
 @media (min-width: 200px) and (max-width: 749px) {
-    body {
-        background-color: grey;
-    }
     
     .footer .footer4  {
         display: none;
@@ -308,5 +393,27 @@ a:hover#nav-icon {
     .footer3 ul {
         margin-left: 0;
         padding-left: 0;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 549px) {
+    .footer1,
+    .footer2,
+    .footer3,
+    #copyright {
+        width: 30%;
+    }
+    
+    .feature-info {
+        margin-top: -4em;
+    }
+    
+    .feature-info img {
+        display: none;
+        width: 100%;
+    }
+    
+    .cat-thumbs div {
+        margin-top: 0;
     }
 }
