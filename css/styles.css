@@ -289,26 +289,43 @@ a:hover#nav-icon {
 
 /* Exhibitions page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.exhibition {
-    background-color; red;
-}
 
 .exhib-img img,
 .exhib-thumbs img {
     width: 100%;
+    margin-bottom: 1em;
+    vertical-align: bottom;
+}
+
+.exhib-img a {
+    padding: 0;
+    margin: 0;
+    height: 0;
+}
+
+.exhib-text p {
+    margin-bottom: .7em;
 }
 
 .exhib-thumbs {
- 
+    margin-top: 2em;
+    margin-bottom: 4em;
+    font-size: .9em;
+    min-height: 25em;
+}
+
+.exhib-thumbs span {
+    text-transform: none;
+}
+
+.exhib-thumbs p a {
+    display: block;
+    line-height: 1.6em;
+    text-transform: uppercase;
 }
 
 .exhib-thumbs div {
-    position: relative;
-}
-
-.exhib-thumbs div img {
-    display: absolute;
-    bottom: 0;
+    margin-bottom: 1em;
 }
 
 /* Footer
@@ -316,13 +333,23 @@ a:hover#nav-icon {
 .foot-container {
     background: #676766;
     min-height: 18em;
+    
+    margin: 0 auto;
+}
+
+@media (min-width: 550px) {
+    .footer {
+        width: 80%;
+    }
 }
 
 .footer {
     max-width: 880px;
     margin: auto;
+    xpadding: 0 20px;
     padding-top: 2em;
-    
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .footer h3,
@@ -397,12 +424,6 @@ a:hover#nav-icon {
 }
 
 @media (min-width: 200px) and (max-width: 549px) {
-    .footer1,
-    .footer2,
-    .footer3,
-    #copyright {
-        width: 30%;
-    }
     
     .feature-info {
         margin-top: -4em;
