@@ -233,10 +233,16 @@ a:hover#nav-icon {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .breadcrumb {
-    margin-top: -1em;
+    display: inline-block;
+    margin-top: -em;
     margin-bottom: 2em;
     text-transform: uppercase;
     font-size: .8em;
+}
+
+.breadcrumb span {
+    color: #ed1c24;
+
 }
 
 .search {
@@ -297,12 +303,6 @@ a:hover#nav-icon {
     vertical-align: bottom;
 }
 
-.exhib-img a {
-    padding: 0;
-    margin: 0;
-    height: 0;
-}
-
 .exhib-text p {
     margin-bottom: .7em;
 }
@@ -327,6 +327,116 @@ a:hover#nav-icon {
 .exhib-thumbs div {
     margin-bottom: 1em;
 }
+
+
+
+
+
+
+
+
+/* Catalogues page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.cats {
+    display: inline-block;
+    float: right;
+    text-transform: uppercase;
+    font-size: .8em;
+    padding-top: .3em;
+}
+
+.cats a:nth-child(odd) {
+    color: #242424;
+}
+
+.cats a:hover {
+    color: #ed1c24;
+}
+
+.album-head {
+    margin-top: 1.5em
+}
+
+.album-head h1 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: .8em;
+    letter-spacing: normal;
+    border-bottom: 1px solid grey;
+    padding-bottom: .5em;
+}
+
+.album span {
+    float: right;
+}
+
+
+.legend {
+    display: inline-block;
+    float: right;
+    font-size: .65em;
+    color: #676766;
+    padding-top: 1em;
+}
+
+.legend li {
+    list-style: none;
+    display: inline-block;
+    padding-left: .5em;
+}
+
+.icon-sold  {
+    display: inline-block;
+    height:8px;
+    width:8px;
+    border-radius: 50px 50px 50px 50px;
+    -moz-border-radius: 50px 50px 50px 50px;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    background: #676766;
+    margin-right: .3em;
+    margin-left: .2em;
+}
+
+.icon-reserved {
+    display: inline-block;
+    height:8px;
+    width:4px;
+    border-radius: 0 50px 50px 0;
+    -moz-border-radius: 0 50px 50px 0;
+    -webkit-border-radius: 0 50px 50px 0;
+    background: #676766;
+    margin-left: 6px;
+    margin-right: .3em;
+}
+
+.icon-private {
+    display: inline-block;
+    height:6px;
+    width:6px;
+    border-radius: 50px 50px 50px 50px;
+    -moz-border-radius: 50px 50px 50px 50px;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    border: 1px solid #676766;
+    margin-right: .3em;
+    margin-left: .2em;
+}
+
+.album img {
+    width: 100%; 
+}
+
+.album {
+    font-size: .9em
+}
+
+
+
+
+
+
+
+
+
 
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
