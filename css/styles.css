@@ -421,10 +421,6 @@ a:hover#nav-icon {
     margin-left: .2em;
 }
 
-.album img {
-    width: 100%; 
-}
-
 .album {
     font-size: .9em
 }
@@ -433,10 +429,16 @@ a:hover#nav-icon {
     margin-bottom: 3em;
 }
 
+.album img {
+    width: 100%; 
+}
 
-
-
-
+.album p {
+    margin-bottom: .5em;
+}
+.album p:last-child {
+    margin-bottom: 3em;
+}
 
 
 
@@ -517,6 +519,14 @@ a:hover#nav-icon {
 }
 
 @media (min-width: 200px) and (max-width: 749px) {
+    
+    .cats {
+        margin-bottom: 3em;
+    }
+    
+    .legend {
+        width: 50%;
+    }
     
     .footer .footer4  {
         display: none;
