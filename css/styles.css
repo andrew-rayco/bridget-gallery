@@ -440,8 +440,26 @@ a:hover#nav-icon {
     margin-bottom: 3em;
 }
 
+/* About page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.about-img img {
+    width: 100%;
+}
 
+.about-text {
+    padding-right: 2em;
+    border-right: 1px solid #bbb;
+    margin-bottom: 4em;
+}
 
+.about-text p {
+    line-height: 1.6em;
+    margin-bottom: 1.5em;
+}
+
+.about-text p:last-child {
+    margin-top: 3em;
+}
 
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
