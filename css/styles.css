@@ -541,6 +541,28 @@ figcaption {
 
 
 
+
+/* Artists Page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.artists h2 {
+    color: #aaa;
+}
+
+.artist-list {
+    list-style: none;
+    margin-bottom: 4em;
+}
+
+.artist-list li {
+    font-size: .7em;
+    margin-bottom: 0;
+}
+
+.artist-list li a:hover {
+    xcolor: red;
+}
+
+
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
