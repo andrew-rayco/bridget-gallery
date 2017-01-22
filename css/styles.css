@@ -38,6 +38,8 @@ a:active {
     color: #ed1c24;
 }
 
+
+
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -54,6 +56,7 @@ header {
 }
 
 
+
 /* Nav
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -63,7 +66,7 @@ nav {
     z-index: 1000;
     background: #e7e8e8;
     height: 27px;
-    margin: 1em 0 3em 0;
+    margin: 1em 0 2em 0;
     padding: 0 1.7em;
 }
 
@@ -146,11 +149,13 @@ a:hover#nav-icon {
 }
 
 
+
 /* Feature
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 #feature-row {
     z-index: 0;
+    margin-top: 3em;
 }
 
 .feature img {
@@ -203,6 +208,7 @@ a:hover#nav-icon {
 }
 
 
+
 /* Category thumbs (homepage)
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -229,15 +235,21 @@ a:hover#nav-icon {
     width: 100%;
 }
 
+
+
 /* Search page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .breadcrumb {
     display: inline-block;
-    margin-top: -em;
+    margin-top: 0;
     margin-bottom: 2em;
     text-transform: uppercase;
     font-size: .8em;
+}
+
+.searchbox {
+    display:block;
 }
 
 .breadcrumb span {
@@ -327,11 +339,6 @@ a:hover#nav-icon {
 .exhib-thumbs div {
     margin-bottom: 1em;
 }
-
-
-
-
-
 
 
 
@@ -440,10 +447,13 @@ a:hover#nav-icon {
     margin-bottom: 3em;
 }
 
+
+
 /* About page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .about-img img {
     width: 100%;
+    margin-bottom: 3em;
 }
 
 .about-text {
@@ -460,6 +470,55 @@ a:hover#nav-icon {
 .about-text p:last-child {
     margin-top: 3em;
 }
+
+
+
+/* Contact page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.contact-img img {
+    width: 100%;
+}
+
+.contact-text p {
+    line-height: 1.5em;
+    margin-bottom: 1.3em;
+    font-size: .75em
+        
+}
+
+.map {
+    width: 100%;
+    margin-top: 2.5em;
+    margin-bottom: 3em;
+}
+
+@media (max-width: 550px) {
+    .contact-img img {
+        display: none;
+    }
+}
+
+    /* Google maps responsive
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .embed-container { 
+        position: relative; 
+        padding-bottom: 56.25%; 
+        height: 0; 
+        overflow: hidden; 
+        max-width: 100%; 
+    } 
+
+    .embed-container iframe, 
+    .embed-container object, 
+    .embed-container embed { 
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%; 
+    }
+
+
 
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
