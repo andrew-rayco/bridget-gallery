@@ -22,7 +22,8 @@ h2 {
     letter-spacing: .04em;
 }
 
-p, a {
+p,
+a {
     font-size: .7em;
     line-height: 1.3em;
     color: #676766;
@@ -37,6 +38,7 @@ a:hover,
 a:active {
     color: #ed1c24;
 }
+
 
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -57,13 +59,12 @@ header {
 /* Nav
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-
 nav {
     position: relative;
     z-index: 1000;
     background: #e7e8e8;
     height: 27px;
-    margin: 1em 0 3em 0;
+    margin: 1em 0 2em 0;
     padding: 0 1.7em;
 }
 
@@ -123,7 +124,6 @@ a:hover#nav-icon {
     .menu-closed {
         display: none;
     }
-    
     .menu-open {
         display: block;
         background-color: #e7e8e8;
@@ -132,13 +132,11 @@ a:hover#nav-icon {
         padding-top: 2em;
         padding-bottom: 0;
     }
-    
     #nav-icon {
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
-    
     nav ul li {
         width: 100%;
         background: #e7e8e8;
@@ -151,6 +149,7 @@ a:hover#nav-icon {
 
 #feature-row {
     z-index: 0;
+    margin-top: 3em;
 }
 
 .feature img {
@@ -186,6 +185,7 @@ a:hover#nav-icon {
 .overlay h2 {
     padding-top: 1.5em;
 }
+
 .overlay p {
     padding-top: 1em;
     padding-bottom: 1.5em;
@@ -229,36 +229,43 @@ a:hover#nav-icon {
     width: 100%;
 }
 
+
 /* Search page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .breadcrumb {
-    margin-top: -1em;
+    display: inline-block;
+    margin-top: 0;
     margin-bottom: 2em;
     text-transform: uppercase;
     font-size: .8em;
 }
 
+.searchbox {
+    display: block;
+}
+
+.breadcrumb span {
+    color: #ed1c24;
+}
+
 .search {
     margin-top: 1em;
     margin-bottom: 1em;
-    
-    /* breaking long words on smaller devices */   
-          /* These are technically the same, but use both */
-        overflow-wrap: break-word;
-        word-wrap: break-word;
-
-        -ms-word-break: break-all;
-        /* This is the dangerous one in WebKit, as it breaks things wherever */
-        word-break: break-all;
-        /* Instead use this non-standard one: */
-        word-break: break-word;
-
-        /* Adds a hyphen where the word breaks, if supported (No Blink) */
-        -ms-hyphens: auto;
-        -moz-hyphens: auto;
-        -webkit-hyphens: auto;
-        hyphens: auto;
+    /* breaking long words on smaller devices */
+    /* These are technically the same, but use both */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    /* This is the dangerous one in WebKit, as it breaks things wherever */
+    word-break: break-all;
+    /* Instead use this non-standard one: */
+    word-break: break-word;
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
 }
 
 .search div {
@@ -266,11 +273,11 @@ a:hover#nav-icon {
     line-height: .2em;
     margin-bottom: 1em;
 }
+
 .search img {
     width: 100%;
     margin-bottom: 1em;
 }
-
 
 .search a {
     text-transform: uppercase;
@@ -287,6 +294,7 @@ a:hover#nav-icon {
     }
 }
 
+
 /* Exhibitions page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -295,12 +303,6 @@ a:hover#nav-icon {
     width: 100%;
     margin-bottom: 1em;
     vertical-align: bottom;
-}
-
-.exhib-img a {
-    padding: 0;
-    margin: 0;
-    height: 0;
 }
 
 .exhib-text p {
@@ -328,12 +330,223 @@ a:hover#nav-icon {
     margin-bottom: 1em;
 }
 
+
+/* Catalogues page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.cats {
+    display: inline-block;
+    float: right;
+    text-transform: uppercase;
+    font-size: .8em;
+    padding-top: .3em;
+}
+
+.cats a:nth-child(odd) {
+    color: #242424;
+}
+
+.cats a:hover {
+    color: #ed1c24;
+}
+
+.album-head {
+    margin-top: 1.5em
+}
+
+.album-head h1 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: .8em;
+    letter-spacing: normal;
+    border-bottom: 1px solid grey;
+    padding-bottom: .5em;
+}
+
+.album span {
+    float: right;
+}
+
+.legend {
+    display: inline-block;
+    float: right;
+    font-size: .65em;
+    color: #676766;
+    padding-top: 1em;
+}
+
+.legend li {
+    list-style: none;
+    display: inline-block;
+    padding-left: .5em;
+}
+
+.icon-sold {
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    border-radius: 50px 50px 50px 50px;
+    -moz-border-radius: 50px 50px 50px 50px;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    background: #676766;
+    margin-right: .3em;
+    margin-left: .2em;
+}
+
+.icon-reserved {
+    display: inline-block;
+    height: 8px;
+    width: 4px;
+    border-radius: 0 50px 50px 0;
+    -moz-border-radius: 0 50px 50px 0;
+    -webkit-border-radius: 0 50px 50px 0;
+    background: #676766;
+    margin-left: 6px;
+    margin-right: .3em;
+}
+
+.icon-private {
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-radius: 50px 50px 50px 50px;
+    -moz-border-radius: 50px 50px 50px 50px;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    border: 1px solid #676766;
+    margin-right: .3em;
+    margin-left: .2em;
+}
+
+.album {
+    font-size: .9em
+}
+
+.album:last-child {
+    margin-bottom: 3em;
+}
+
+.album img {
+    width: 100%;
+}
+
+.album p {
+    margin-bottom: .5em;
+}
+
+.album p:last-child {
+    margin-bottom: 3em;
+}
+
+
+/* About page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.about-img img {
+    width: 100%;
+    margin-bottom: 3em;
+}
+
+.about-text {
+    padding-right: 2em;
+    border-right: 1px solid #bbb;
+    margin-bottom: 4em;
+}
+
+.about-text p {
+    line-height: 1.6em;
+    margin-bottom: 1.5em;
+}
+
+.about-text p:last-child {
+    margin-top: 3em;
+}
+
+
+/* Contact page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.contact-img img {
+    width: 100%;
+}
+
+.contact-text p {
+    line-height: 1.5em;
+    margin-bottom: 1.3em;
+    font-size: .75em
+}
+
+.map {
+    width: 100%;
+    margin-top: 2.5em;
+    margin-bottom: 3em;
+}
+
+@media (max-width: 550px) {
+    .contact-img img {
+        display: none;
+    }
+}
+
+/* Google maps responsive
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* News page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.news-img img {
+    max-width: 100%;
+}
+
+.news-article {
+    margin-bottom: 2em;
+}
+
+.news-text h2 {
+    font-size: 1.3em;
+    color: #ed1c24;
+    margin-bottom: 0.3em;
+}
+
+.news-text p span {
+    margin-bottom: 0;
+    xpadding-bottom: 0;
+}
+
+.news-text p:nth-child(2) {
+    margin-bottom: 1.2em;
+}
+
+figcaption {
+    font-size: .6em;
+}
+
+
+
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 .foot-container {
     background: #676766;
     min-height: 18em;
-    
     margin: 0 auto;
 }
 
@@ -365,7 +578,7 @@ a:hover#nav-icon {
 }
 
 .footer p,
-.footer li{
+.footer li {
     font-size: .8em;
 }
 
@@ -391,6 +604,7 @@ a:hover#nav-icon {
 .footer2 {
     padding-left: 1.5em;
 }
+
 .footer3,
 .footer4 {
     padding-left: 4em;
@@ -404,11 +618,15 @@ a:hover#nav-icon {
 }
 
 @media (min-width: 200px) and (max-width: 749px) {
-    
-    .footer .footer4  {
+    .cats {
+        margin-bottom: 3em;
+    }
+    .legend {
+        width: 50%;
+    }
+    .footer .footer4 {
         display: none;
     }
-    
     .footer1,
     .footer2,
     .footer3,
@@ -416,7 +634,6 @@ a:hover#nav-icon {
     #copyright {
         padding: 1em 0 1.2em 2.5em;
     }
-    
     .footer3 ul {
         margin-left: 0;
         padding-left: 0;
@@ -424,16 +641,13 @@ a:hover#nav-icon {
 }
 
 @media (min-width: 200px) and (max-width: 549px) {
-    
     .feature-info {
         margin-top: -4em;
     }
-    
     .feature-info img {
         display: none;
         width: 100%;
     }
-    
     .cat-thumbs div {
         margin-top: 0;
     }
