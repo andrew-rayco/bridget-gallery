@@ -459,7 +459,6 @@ a:hover#nav-icon {
 }
 
 .about-text {
-    padding-right: 2em;
     border-right: 1px solid #bbb;
     margin-bottom: 4em;
 }
@@ -467,6 +466,12 @@ a:hover#nav-icon {
 .about-text p {
     line-height: 1.6em;
     margin-bottom: 1.5em;
+}
+
+@media (min-width: 550px) {
+    .about-text p {
+        padding-right: 2em;
+    }
 }
 
 .about-text p:last-child {
