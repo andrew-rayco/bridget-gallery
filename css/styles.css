@@ -1,6 +1,24 @@
 /* Type
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+.search,
+.footer {
+    /* breaking long words on smaller devices */
+    /* These are technically the same, but use both */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    /* This is the dangerous one in WebKit, as it breaks things wherever */
+    word-break: break-all;
+    /* Instead use this non-standard one: */
+    word-break: break-word;
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
 h1,
 h2,
 h3,
@@ -104,16 +122,14 @@ nav ul:after {
 
 #nav-icon {
     display: none;
-    opacity: .5;
+    opacity: .3;
     width: 25px;
     height: 20px;
-    padding: .2em;
-    background-color: white;
+    padding: .25em;
 }
 
 a:hover#nav-icon {
     background-color: #ed1c24;
-    border-radius: 5%;
 }
 
 .active {
@@ -219,7 +235,7 @@ a:hover#nav-icon {
 }
 
 .cat-thumbs a {
-    font-size: 1.1em;
+    font-size: 1em;
     padding-top: .5em;
     color: #676766;
     letter-spacing: .02em;
@@ -243,6 +259,7 @@ a:hover#nav-icon {
 
 .searchbox {
     display: block;
+    margin-bottom: 2em;
 }
 
 .breadcrumb span {
@@ -252,20 +269,6 @@ a:hover#nav-icon {
 .search {
     margin-top: 1em;
     margin-bottom: 1em;
-    /* breaking long words on smaller devices */
-    /* These are technically the same, but use both */
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    -ms-word-break: break-all;
-    /* This is the dangerous one in WebKit, as it breaks things wherever */
-    word-break: break-all;
-    /* Instead use this non-standard one: */
-    word-break: break-word;
-    /* Adds a hyphen where the word breaks, if supported (No Blink) */
-    -ms-hyphens: auto;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;
 }
 
 .search div {
@@ -365,6 +368,7 @@ a:hover#nav-icon {
 
 .album span {
     float: right;
+    line-height: 1em;
 }
 
 .legend {
@@ -383,12 +387,13 @@ a:hover#nav-icon {
 
 .icon-sold {
     display: inline-block;
-    height: 8px;
-    width: 8px;
-    border-radius: 50px 50px 50px 50px;
-    -moz-border-radius: 50px 50px 50px 50px;
-    -webkit-border-radius: 50px 50px 50px 50px;
+    height: 6px;
+    width: 6px;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
     background: #676766;
+    border: 1px solid #676766;
     margin-right: .3em;
     margin-left: .2em;
 }
@@ -409,9 +414,9 @@ a:hover#nav-icon {
     display: inline-block;
     height: 6px;
     width: 6px;
-    border-radius: 50px 50px 50px 50px;
-    -moz-border-radius: 50px 50px 50px 50px;
-    -webkit-border-radius: 50px 50px 50px 50px;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
     border: 1px solid #676766;
     margin-right: .3em;
     margin-left: .2em;
@@ -447,7 +452,6 @@ a:hover#nav-icon {
 }
 
 .about-text {
-    padding-right: 2em;
     border-right: 1px solid #bbb;
     margin-bottom: 4em;
 }
@@ -455,6 +459,12 @@ a:hover#nav-icon {
 .about-text p {
     line-height: 1.6em;
     margin-bottom: 1.5em;
+}
+
+@media (min-width: 550px) {
+    .about-text p {
+        padding-right: 2em;
+    }
 }
 
 .about-text p:last-child {
@@ -487,6 +497,7 @@ a:hover#nav-icon {
     }
 }
 
+
 /* Google maps responsive
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -509,9 +520,9 @@ a:hover#nav-icon {
 }
 
 
-
 /* News page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 .news-img img {
     max-width: 100%;
 }
@@ -526,11 +537,6 @@ a:hover#nav-icon {
     margin-bottom: 0.3em;
 }
 
-.news-text p span {
-    margin-bottom: 0;
-    xpadding-bottom: 0;
-}
-
 .news-text p:nth-child(2) {
     margin-bottom: 1.2em;
 }
@@ -540,17 +546,35 @@ figcaption {
 }
 
 
+/* Artists Page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.artists h2 {
+    color: #aaa;
+}
+
+.artist-list {
+    list-style: none;
+    margin-bottom: 4em;
+}
+
+.artist-list li {
+    font-size: .7em;
+    margin-bottom: 0;
+}
+
 
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .foot-container {
+    position: relative;
     background: #676766;
     min-height: 18em;
     margin: 0 auto;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 400px) {
     .footer {
         width: 80%;
     }
@@ -559,10 +583,7 @@ figcaption {
 .footer {
     max-width: 880px;
     margin: auto;
-    xpadding: 0 20px;
     padding-top: 2em;
-    padding-left: 2em;
-    padding-right: 2em;
 }
 
 .footer h3,
@@ -601,20 +622,18 @@ figcaption {
     color: #ed1c24;
 }
 
-.footer2 {
-    padding-left: 1.5em;
-}
-
-.footer3,
-.footer4 {
-    padding-left: 4em;
-}
-
 #copyright {
-    color: white;
-    max-width: 880px;
-    margin: auto;
+    color: #bbb;
     padding-bottom: 2em;
+}
+
+@media (min-width: 550px) and (max-width: 749px) {
+    .footer1,
+    .footer2,
+    .footer3 {
+        width: 30.6666666667% !important;
+        padding-bottom: 1em;
+    }
 }
 
 @media (min-width: 200px) and (max-width: 749px) {
@@ -626,13 +645,6 @@ figcaption {
     }
     .footer .footer4 {
         display: none;
-    }
-    .footer1,
-    .footer2,
-    .footer3,
-    .footer4,
-    #copyright {
-        padding: 1em 0 1.2em 2.5em;
     }
     .footer3 ul {
         margin-left: 0;
@@ -650,5 +662,32 @@ figcaption {
     }
     .cat-thumbs div {
         margin-top: 0;
+    }
+    .about-text {
+        border: 0;
+    }
+    .footer {
+        padding-top: 0;
+    }
+    .footer1 h3,
+    .footer2 h3,
+    .footer3 h3 {
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+}
+
+
+/* Match footer width and padding with skeleton container */
+
+@media (min-width: 200px) and (max-width: 399px) {
+    .footer {
+        padding-left: 20px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 549px) {
+    .footer {
+        width: 85%;
     }
 }
