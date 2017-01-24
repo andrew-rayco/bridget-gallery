@@ -122,15 +122,14 @@ nav ul:after {
 
 #nav-icon {
     display: none;
-    opacity: .5;
+    opacity: .3;
     width: 25px;
     height: 20px;
-    padding: .2em;
+    padding: .25em;
 }
 
 a:hover#nav-icon {
     background-color: #ed1c24;
-    border-radius: 5%;
 }
 
 .active {
