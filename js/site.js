@@ -1,9 +1,25 @@
-var menuIcon = document.getElementById('nav-icon');
-var menuToggle = document.getElementById('menu');
-menuIcon.addEventListener('click', function () {
-    if (menuToggle.className === 'menu-closed') {
-        menuToggle.className = 'menu-open';
-    } else {
-        menuToggle.className = 'menu-closed';
-    }
+$(function() {
+    var $menu = $('#menu');
+    var $menuIcon = $('#nav-icon')
+    var $navItems = $('#menu li')
+    
+    var $menuShowHide = function() {
+        if ($(window).width() < 767) {
+            $menu.hide();
+        } else {
+            $menu.show();
+        };
+    };
+    
+    $menuShowHide();
+    
+    $(window).resize(function() {
+        $menuShowHide();
+    });
+    
+    $menuIcon.on('click', function() {
+        $menu.slideToggle(200);
+        $navItems.hide().fadeIn(1000);
+    });
+    
 });
