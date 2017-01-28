@@ -581,7 +581,7 @@ figcaption {
 }
 
 .footer {
-    max-width: 880px;
+    max-width: 1280px;
     margin: auto;
     padding-top: 2em;
 }
@@ -657,8 +657,9 @@ figcaption {
         margin-top: -4em;
     }
     .feature-info img {
-        display: none;
         width: 100%;
+        padding-bottom: 2em;
+        border-bottom: 1px solid #bbb;
     }
     .cat-thumbs div {
         margin-top: 0;
