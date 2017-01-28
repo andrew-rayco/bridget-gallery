@@ -4,7 +4,7 @@ $(function() {
     var $navItems = $('#menu li')
     
     var $menuShowHide = function() {
-        if ($(window).width() < 750) {
+        if ($(window).width() < 767) {
             $menu.hide();
         } else {
             $menu.show();
