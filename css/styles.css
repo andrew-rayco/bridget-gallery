@@ -136,6 +136,7 @@ a:hover#nav-icon {
     color: #ed1c24;
 }
 
+
 @media (max-width: 749px) {
     #menu {
         display: block;
