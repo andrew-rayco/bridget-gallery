@@ -136,7 +136,6 @@ a:hover#nav-icon {
     color: #ed1c24;
 }
 
-
 @media (max-width: 749px) {
     #menu {
         display: block;
@@ -145,7 +144,7 @@ a:hover#nav-icon {
         min-width: 150px;
         margin: 0 auto;
         padding-top: 2em;
-        padding-bottom: 0;    
+        padding-bottom: 0;
     }
     #nav-icon {
         display: block;
