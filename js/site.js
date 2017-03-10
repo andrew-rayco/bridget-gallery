@@ -25,7 +25,7 @@ $(function() {
 });
 
 
-$('.fl').on('click', function() {
+$('.lightbox').on('click', function() {
   var $content = '<h2>Artist name</h2>';
   $content += $(this).html();
   $.featherlight($content);
