@@ -742,6 +742,10 @@ figcaption {
         margin-top: 2em;
         margin-bottom: 1em;
     }
+    img.float-left  {
+      float: none;
+      margin-bottom: 1em;
+    }
 }
 
 
