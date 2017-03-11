@@ -33,12 +33,11 @@ $(function() {
 
     // Catalogues bio slideToggle
     // // Hide html modal content from loading on page
-    var $bio = $('#nick-botting');
+    var $bio = $('#bio-content');
     $bio.hide();
 
     $('.bio').on('click', function() {
       $bio.slideToggle(300);
-
     });
 
     // == Custom lightbox ==

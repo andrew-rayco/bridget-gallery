@@ -50,6 +50,9 @@ a:hover, a:active {
 }
 
 
+
+
+
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -64,6 +67,9 @@ header {
 #sublogo h2 {
     margin: 0;
 }
+
+
+
 
 
 /* Nav
@@ -150,6 +156,9 @@ a:hover#nav-icon {
 }
 
 
+
+
+
 /* Feature
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -208,6 +217,9 @@ a:hover#nav-icon {
 }
 
 
+
+
+
 /* Category thumbs (homepage)
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -233,6 +245,9 @@ a:hover#nav-icon {
 .cat-thumbs img {
     width: 100%;
 }
+
+
+
 
 
 /* Search page
@@ -313,6 +328,9 @@ input.searchbox:focus {
 }
 
 
+
+
+
 /* Exhibitions page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -346,6 +364,9 @@ input.searchbox:focus {
 .exhib-thumbs div {
     margin-bottom: 1em;
 }
+
+
+
 
 
 /* Catalogues page
@@ -469,6 +490,15 @@ td {
     padding: .2em;
 }
 
+.album a {
+ -moz-box-shadow: none !important;
+ -webkit-box-shadow: none !important;
+ box-shadow: none !important;
+}
+
+
+
+
 
 /* About page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -497,6 +527,9 @@ td {
 .about-text p:last-child {
     margin-top: 3em;
 }
+
+
+
 
 
 /* Contact page
@@ -545,6 +578,9 @@ td {
 }
 
 
+
+
+
 /* News page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -571,6 +607,9 @@ figcaption {
 }
 
 
+
+
+
 /* Artists Page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -587,6 +626,9 @@ figcaption {
     font-size: .7em;
     margin-bottom: 0;
 }
+
+
+
 
 
 /* Footer
@@ -649,6 +691,12 @@ figcaption {
     padding-bottom: 2em;
 }
 
+
+
+
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media (min-width: 550px) and (max-width: 749px) {
     .footer1, .footer2, .footer3 {
         width: 30.6666666667% !important;
@@ -697,6 +745,9 @@ figcaption {
 }
 
 
+
+
+
 /* Custom Featherlight lightbox styles */
 
 .featherlight-content {
@@ -720,6 +771,9 @@ figcaption {
 .featherlight-content span {
     float: right;
 }
+
+
+
 
 
 /* Match footer width and padding with skeleton container */
