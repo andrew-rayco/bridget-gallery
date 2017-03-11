@@ -1,8 +1,7 @@
 /* Type
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.search,
-.footer {
+.search, .footer {
     /* breaking long words on smaller devices */
     /* These are technically the same, but use both */
     overflow-wrap: break-word;
@@ -19,12 +18,7 @@
     hyphens: auto;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     color: #676766;
 }
@@ -40,8 +34,7 @@ h2 {
     letter-spacing: .04em;
 }
 
-p,
-a {
+p, a, table {
     font-size: .7em;
     line-height: 1.3em;
     color: #676766;
@@ -52,8 +45,7 @@ a {
     font-size: 1em;
 }
 
-a:hover,
-a:active {
+a:hover, a:active {
     color: #ed1c24;
 }
 
@@ -186,8 +178,7 @@ a:hover#nav-icon {
     background: rgba(0, 0, 0, 0.5);
 }
 
-.overlay h2,
-.overlay p {
+.overlay h2, .overlay p {
     color: white;
     font-size: 0.8em;
     letter-spacing: .075em;
@@ -260,6 +251,10 @@ a:hover#nav-icon {
     margin-bottom: 2em;
 }
 
+input.searchbox:focus {
+    border-color: #ed1c24;
+}
+
 .breadcrumb span {
     color: #ed1c24;
 }
@@ -289,6 +284,28 @@ a:hover#nav-icon {
     margin-bottom: 7em;
 }
 
+.price-menu {
+    position: absolute;
+    list-style: none;
+    border: 1px solid #e7e8e8;
+    background: #fff;
+    padding: .7em;
+    padding-bottom: 0;
+    margin-left: 2em;
+    z-index: 1;
+}
+
+.price-menu li {
+    border-bottom: 1px solid #676766;
+    text-align: left;
+    padding-bottom: .4em;
+}
+
+.price-menu li:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
 @media (min-width: 200px) and (max-width: 549px) {
     .search img {
         display: none;
@@ -299,8 +316,7 @@ a:hover#nav-icon {
 /* Exhibitions page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.exhib-img img,
-.exhib-thumbs img {
+.exhib-img img, .exhib-thumbs img {
     width: 100%;
     margin-bottom: 1em;
     vertical-align: bottom;
@@ -440,6 +456,19 @@ a:hover#nav-icon {
     margin-bottom: 3em;
 }
 
+.float-left {
+    float: left;
+    margin-right: 1em;
+}
+
+table, th, tr, td {
+    border: none;
+}
+
+td {
+    padding: .2em;
+}
+
 
 /* About page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -507,9 +536,7 @@ a:hover#nav-icon {
     max-width: 100%;
 }
 
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
+.embed-container iframe, .embed-container object, .embed-container embed {
     position: absolute;
     top: 0;
     left: 0;
@@ -584,9 +611,7 @@ figcaption {
     padding-top: 2em;
 }
 
-.footer h3,
-.footer p,
-.footer a {
+.footer h3, .footer p, .footer a {
     color: white;
 }
 
@@ -596,8 +621,7 @@ figcaption {
     font-weight: 700;
 }
 
-.footer p,
-.footer li {
+.footer p, .footer li {
     font-size: .8em;
 }
 
@@ -626,9 +650,7 @@ figcaption {
 }
 
 @media (min-width: 550px) and (max-width: 749px) {
-    .footer1,
-    .footer2,
-    .footer3 {
+    .footer1, .footer2, .footer3 {
         width: 30.6666666667% !important;
         padding-bottom: 1em;
     }
@@ -668,35 +690,35 @@ figcaption {
     .footer {
         padding-top: 0;
     }
-    .footer1 h3,
-    .footer2 h3,
-    .footer3 h3 {
+    .footer1 h3, .footer2 h3, .footer3 h3 {
         margin-top: 2em;
         margin-bottom: 1em;
     }
 }
 
+
 /* Custom Featherlight lightbox styles */
+
 .featherlight-content {
-  font-size: 1.2em;
+    font-size: 1.2em;
 }
 
 .featherlight-content p:first-of-type {
-  margin-top: 2em;
+    margin-top: 2em;
 }
 
 .featherlight-content p:last-of-type {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .featherlight-content img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .featherlight-content span {
-  float: right;
+    float: right;
 }
 
 

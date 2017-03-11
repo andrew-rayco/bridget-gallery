@@ -22,11 +22,33 @@ $(function() {
         $navItems.hide().fadeIn(1000);
     });
 
-});
+    // Price hover menu on Search page
+    $priceMenu = $('.price-menu');
+    $priceMenu.hide();
+
+    $('.price').on('click', function() {
+      $priceMenu.slideToggle(200);
+    })
 
 
-$('.lightbox').on('click', function() {
-  var $content = '<h2>Artist name</h2>';
-  $content += $(this).html();
-  $.featherlight($content);
+    // Catalogues bio slideToggle
+    // // Hide html modal content from loading on page
+    var $bio = $('#nick-botting');
+    $bio.hide();
+
+    $('.bio').on('click', function() {
+      $bio.slideToggle(300);
+
+    });
+
+    // == Custom lightbox ==
+    // Catalogues image modal
+    $('.lightbox').on('click', function() {
+      // Hardcoded artist name to be replaced
+      var $content = '<h2>Artist name</h2>';
+      // Takes all HTML within anchor tag and shows in lightbox with full size image
+      $content += $(this).html();
+      $.featherlight($content);
+    });
+
 });
