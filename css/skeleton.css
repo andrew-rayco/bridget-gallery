@@ -32,7 +32,7 @@
   position: relative;
   width: 100%;
   max-width: 1280px;
-    min-width: 300px; /* Added manually */ 
+    min-width: 300px; /* Added manually */
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -120,7 +120,7 @@
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
-  font-size: 62.5%; 
+  font-size: 62.5%;
   overflow-y: scroll; /* manually added to force scroll bar and prevent 'centering jumps' when navigating back and forth between pages with enough content for a scrollbar and pages that do not */
 }
 body {
@@ -410,11 +410,11 @@ there.
     body {
         xbackground-color: aqua;
     }
-    
+
     #feature-info {
         margin-top: -5em;
     }
-    
+
 }
 
 /* Larger than phablet (also point when grid becomes active) */
@@ -422,9 +422,9 @@ there.
     body {
         xbackground-color: lightpink;
     }
-    
 
-    
+
+
 }
 
 /* Larger than tablet */
@@ -432,8 +432,8 @@ there.
     body {
         xbackground-color: yellow;
     }
-    
-    
+
+
 }
 
 /* Larger than desktop */

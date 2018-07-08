@@ -30,12 +30,12 @@ h1 {
 }
 
 h2 {
-    font-size: .7em;
+    font-size: .9em;
     letter-spacing: .04em;
 }
 
 p, a, table {
-    font-size: .7em;
+    font-size: .9em;
     line-height: 1.3em;
     color: #676766;
 }
@@ -224,6 +224,8 @@ a:hover#nav-icon {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .cat-thumbs {
+    display: flex;
+    align-items: flex-end;
     min-height: 14em;
     line-height: 3em;
 }
@@ -243,7 +245,11 @@ a:hover#nav-icon {
 }
 
 .cat-thumbs img {
-    width: 100%;
+    max-width: 100%;
+}
+
+.cat-thumbs p {
+    min-height: 4rem;
 }
 
 
@@ -542,7 +548,7 @@ td {
 .contact-text p {
     line-height: 1.5em;
     margin-bottom: 1.3em;
-    font-size: .75em
+    font-size: .9em
 }
 
 .map {
